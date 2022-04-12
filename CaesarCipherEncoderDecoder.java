@@ -7,7 +7,7 @@ public class CaesarCipherEncoderDecoder{
     private static final List<Character> alphabetList = new LinkedList<>();
     private static final Character[] uniques = new Character[]
             {',', '.', ' ', ':', ';', '?', '!', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '\'', '\"', '-',
-            '$', '#', '@', '*', '_', '>', '<', '^', '&', '+', '/', '\\', '%', '№', '`', '~'};
+             '$', '#', '@', '*', '_', '>', '<', '^', '&', '+', '/', '\\', '%', '№', '`', '~'};
     private static final List<Character> uniquesList = Arrays.asList(uniques);
     private static boolean isRepeat;
 
@@ -20,7 +20,7 @@ public class CaesarCipherEncoderDecoder{
             options.add("decoder");
 
             if(! isRepeat)
-                System.out.print("Choose the option: Encoder/Decoder: ");
+                System.out.print("Type the option: Encoder/Decoder: ");
 
             Scanner scanner = new Scanner(System.in);
             String option = scanner.nextLine();
@@ -70,7 +70,7 @@ public class CaesarCipherEncoderDecoder{
                 stringBuilder.append(alphabetList.get(futureIndex));
             }
         }
-        System.out.println("Translate: "+stringBuilder+"\n");
+        System.out.println("Translation: "+stringBuilder+"\n");
         isRepeat = false;
     }
 
