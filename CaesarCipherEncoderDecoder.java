@@ -6,7 +6,8 @@ public class CaesarCipherEncoderDecoder{
     private static final char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
     private static final List<Character> alphabetList = new LinkedList<>();
     private static final Character[] uniques = new Character[]
-            {',', '.', ' ', ':', ';', '?', '!', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '\''};
+            {',', '.', ' ', ':', ';', '?', '!', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '\'', '\"', '-',
+            '$', '#', '@', '*', '_', '>', '<', '^', '&', '+', '/', '\\', '%', '№', '`', '~'};
     private static final List<Character> uniquesList = Arrays.asList(uniques);
     private static boolean isRepeat;
 
