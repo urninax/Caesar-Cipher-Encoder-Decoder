@@ -20,7 +20,7 @@ public class CaesarCipherEncoderDecoder{
             options.add("decoder");
 
             if(! isRepeat)
-                System.out.print("Type the option: Encoder/Decoder: ");
+                System.out.print("Enter the option: Encoder/Decoder: ");
 
             Scanner scanner = new Scanner(System.in);
             String option = scanner.nextLine();
@@ -37,10 +37,10 @@ public class CaesarCipherEncoderDecoder{
         Scanner scanner = new Scanner(System.in);
         StringBuilder stringBuilder = new StringBuilder();
 
-        System.out.print("Type the index: ");
+        System.out.print("Enter the index: ");
         int index = scanner.nextInt();
 
-        System.out.println("Type the text: ");
+        System.out.println("Enter the text: ");
         Scanner scanner1 = new Scanner(System.in);
         String text = scanner1.nextLine();
         char[] textToCharArray = text.toCharArray();
